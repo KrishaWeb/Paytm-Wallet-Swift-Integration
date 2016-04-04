@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		713719211CA16845007975FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713719201CA16845007975FB /* AppDelegate.swift */; };
+		713719231CA16845007975FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713719221CA16845007975FB /* ViewController.swift */; };
+		713719261CA16845007975FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713719241CA16845007975FB /* Main.storyboard */; };
+		713719281CA16845007975FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713719271CA16845007975FB /* Assets.xcassets */; };
+		7137192B1CA16845007975FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713719291CA16845007975FB /* LaunchScreen.storyboard */; };
+		713719361CA16845007975FB /* PaytmWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713719351CA16845007975FB /* PaytmWalletTests.swift */; };
+		713719411CA16845007975FB /* PaytmWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713719401CA16845007975FB /* PaytmWalletUITests.swift */; };
+		713719561CA16926007975FB /* libPaymentsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713719551CA16926007975FB /* libPaymentsSDK.a */; };
+		7137195C1CA16ACB007975FB /* TurfCommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137195B1CA16ACB007975FB /* TurfCommonFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		713719321CA16845007975FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713719151CA16844007975FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7137191C1CA16845007975FB;
+			remoteInfo = PaytmWallet;
+		};
+		7137193D1CA16845007975FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713719151CA16844007975FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7137191C1CA16845007975FB;
+			remoteInfo = PaytmWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7137191D1CA16845007975FB /* PaytmWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaytmWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		713719201CA16845007975FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		713719221CA16845007975FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		713719251CA16845007975FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		713719271CA16845007975FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7137192A1CA16845007975FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7137192C1CA16845007975FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713719311CA16845007975FB /* PaytmWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		713719351CA16845007975FB /* PaytmWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmWalletTests.swift; sourceTree = "<group>"; };
+		713719371CA16845007975FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7137193C1CA16845007975FB /* PaytmWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaytmWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		713719401CA16845007975FB /* PaytmWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaytmWalletUITests.swift; sourceTree = "<group>"; };
+		713719421CA16845007975FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713719501CA16926007975FB /* PaymentsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsSDK.h; sourceTree = "<group>"; };
+		713719511CA16926007975FB /* PGMerchantConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMerchantConfiguration.h; sourceTree = "<group>"; };
+		713719521CA16926007975FB /* PGOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGOrder.h; sourceTree = "<group>"; };
+		713719531CA16926007975FB /* PGServerEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGServerEnvironment.h; sourceTree = "<group>"; };
+		713719541CA16926007975FB /* PGTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTransactionViewController.h; sourceTree = "<group>"; };
+		713719551CA16926007975FB /* libPaymentsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentsSDK.a; sourceTree = "<group>"; };
+		713719571CA16941007975FB /* PaytmWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaytmWallet-Bridging-Header.h"; sourceTree = "<group>"; };
+		7137195B1CA16ACB007975FB /* TurfCommonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurfCommonFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7137191A1CA16845007975FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713719561CA16926007975FB /* libPaymentsSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7137192E1CA16845007975FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713719391CA16845007975FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		713719141CA16844007975FB = {
+			isa = PBXGroup;
+			children = (
+				7137191F1CA16845007975FB /* PaytmWallet */,
+				713719341CA16845007975FB /* PaytmWalletTests */,
+				7137193F1CA16845007975FB /* PaytmWalletUITests */,
+				7137191E1CA16845007975FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7137191E1CA16845007975FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7137191D1CA16845007975FB /* PaytmWallet.app */,
+				713719311CA16845007975FB /* PaytmWalletTests.xctest */,
+				7137193C1CA16845007975FB /* PaytmWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7137191F1CA16845007975FB /* PaytmWallet */ = {
+			isa = PBXGroup;
+			children = (
+				713719201CA16845007975FB /* AppDelegate.swift */,
+				713719221CA16845007975FB /* ViewController.swift */,
+				713719241CA16845007975FB /* Main.storyboard */,
+				7137194E1CA16926007975FB /* 2_1 */,
+				713719271CA16845007975FB /* Assets.xcassets */,
+				7137195B1CA16ACB007975FB /* TurfCommonFunctions.swift */,
+				713719291CA16845007975FB /* LaunchScreen.storyboard */,
+				7137192C1CA16845007975FB /* Info.plist */,
+				713719571CA16941007975FB /* PaytmWallet-Bridging-Header.h */,
+			);
+			path = PaytmWallet;
+			sourceTree = "<group>";
+		};
+		713719341CA16845007975FB /* PaytmWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				713719351CA16845007975FB /* PaytmWalletTests.swift */,
+				713719371CA16845007975FB /* Info.plist */,
+			);
+			path = PaytmWalletTests;
+			sourceTree = "<group>";
+		};
+		7137193F1CA16845007975FB /* PaytmWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				713719401CA16845007975FB /* PaytmWalletUITests.swift */,
+				713719421CA16845007975FB /* Info.plist */,
+			);
+			path = PaytmWalletUITests;
+			sourceTree = "<group>";
+		};
+		7137194E1CA16926007975FB /* 2_1 */ = {
+			isa = PBXGroup;
+			children = (
+				7137194F1CA16926007975FB /* include */,
+				713719551CA16926007975FB /* libPaymentsSDK.a */,
+			);
+			path = 2_1;
+			sourceTree = "<group>";
+		};
+		7137194F1CA16926007975FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				713719501CA16926007975FB /* PaymentsSDK.h */,
+				713719511CA16926007975FB /* PGMerchantConfiguration.h */,
+				713719521CA16926007975FB /* PGOrder.h */,
+				713719531CA16926007975FB /* PGServerEnvironment.h */,
+				713719541CA16926007975FB /* PGTransactionViewController.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7137191C1CA16845007975FB /* PaytmWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713719451CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWallet" */;
+			buildPhases = (
+				713719191CA16845007975FB /* Sources */,
+				7137191A1CA16845007975FB /* Frameworks */,
+				7137191B1CA16845007975FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaytmWallet;
+			productName = PaytmWallet;
+			productReference = 7137191D1CA16845007975FB /* PaytmWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		713719301CA16845007975FB /* PaytmWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713719481CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWalletTests" */;
+			buildPhases = (
+				7137192D1CA16845007975FB /* Sources */,
+				7137192E1CA16845007975FB /* Frameworks */,
+				7137192F1CA16845007975FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				713719331CA16845007975FB /* PBXTargetDependency */,
+			);
+			name = PaytmWalletTests;
+			productName = PaytmWalletTests;
+			productReference = 713719311CA16845007975FB /* PaytmWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7137193B1CA16845007975FB /* PaytmWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7137194B1CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWalletUITests" */;
+			buildPhases = (
+				713719381CA16845007975FB /* Sources */,
+				713719391CA16845007975FB /* Frameworks */,
+				7137193A1CA16845007975FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7137193E1CA16845007975FB /* PBXTargetDependency */,
+			);
+			name = PaytmWalletUITests;
+			productName = PaytmWalletUITests;
+			productReference = 7137193C1CA16845007975FB /* PaytmWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		713719151CA16844007975FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = KrishaWeb;
+				TargetAttributes = {
+					7137191C1CA16845007975FB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9A4D42CLZA;
+					};
+					713719301CA16845007975FB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7137191C1CA16845007975FB;
+					};
+					7137193B1CA16845007975FB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7137191C1CA16845007975FB;
+					};
+				};
+			};
+			buildConfigurationList = 713719181CA16844007975FB /* Build configuration list for PBXProject "PaytmWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 713719141CA16844007975FB;
+			productRefGroup = 7137191E1CA16845007975FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7137191C1CA16845007975FB /* PaytmWallet */,
+				713719301CA16845007975FB /* PaytmWalletTests */,
+				7137193B1CA16845007975FB /* PaytmWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7137191B1CA16845007975FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7137192B1CA16845007975FB /* LaunchScreen.storyboard in Resources */,
+				713719281CA16845007975FB /* Assets.xcassets in Resources */,
+				713719261CA16845007975FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7137192F1CA16845007975FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7137193A1CA16845007975FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		713719191CA16845007975FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713719231CA16845007975FB /* ViewController.swift in Sources */,
+				7137195C1CA16ACB007975FB /* TurfCommonFunctions.swift in Sources */,
+				713719211CA16845007975FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7137192D1CA16845007975FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713719361CA16845007975FB /* PaytmWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713719381CA16845007975FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713719411CA16845007975FB /* PaytmWalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		713719331CA16845007975FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7137191C1CA16845007975FB /* PaytmWallet */;
+			targetProxy = 713719321CA16845007975FB /* PBXContainerItemProxy */;
+		};
+		7137193E1CA16845007975FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7137191C1CA16845007975FB /* PaytmWallet */;
+			targetProxy = 7137193D1CA16845007975FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		713719241CA16845007975FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				713719251CA16845007975FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		713719291CA16845007975FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7137192A1CA16845007975FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		713719431CA16845007975FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		713719441CA16845007975FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		713719461CA16845007975FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PaytmWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaytmWallet/2_1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytmWallet/PaytmWallet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		713719471CA16845007975FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PaytmWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaytmWallet/2_1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaytmWallet/PaytmWallet-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		713719491CA16845007975FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PaytmWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaytmWallet.app/PaytmWallet";
+			};
+			name = Debug;
+		};
+		7137194A1CA16845007975FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PaytmWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaytmWallet.app/PaytmWallet";
+			};
+			name = Release;
+		};
+		7137194C1CA16845007975FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaytmWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PaytmWallet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7137194D1CA16845007975FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaytmWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.krishaweb.PaytmWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PaytmWallet;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		713719181CA16844007975FB /* Build configuration list for PBXProject "PaytmWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713719431CA16845007975FB /* Debug */,
+				713719441CA16845007975FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713719451CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713719461CA16845007975FB /* Debug */,
+				713719471CA16845007975FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713719481CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713719491CA16845007975FB /* Debug */,
+				7137194A1CA16845007975FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7137194B1CA16845007975FB /* Build configuration list for PBXNativeTarget "PaytmWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7137194C1CA16845007975FB /* Debug */,
+				7137194D1CA16845007975FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 713719151CA16844007975FB /* Project object */;
+}
